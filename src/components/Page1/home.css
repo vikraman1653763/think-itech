@@ -1,0 +1,45 @@
+.home-container {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/assets/bg.webp');
+}
+
+.home-content {
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.281);
+  border-radius: 8px;
+  position: relative;
+  color: black;
+}
+
+.home-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, #020064, #fb0c0c);
+  -webkit-background-clip: text; 
+  background-clip: text;
+  color: transparent;
+}
+
+
+.home-description {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.made-in-use {
+  position: absolute;
+  bottom: -50%;
+  right: -50%;
+  width: 20em;
+  transform: rotate(-20deg); 
+  height: auto;
+}

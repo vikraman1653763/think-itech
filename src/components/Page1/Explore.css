@@ -1,0 +1,51 @@
+.product-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #f4f4f400;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .gear-icon-container {
+    position: absolute;
+    right: -15%;
+    top: 50%;
+    transform: translateY(-50%); /* Center the gear vertically */
+    margin-left: 20px; /* Add a little space from the left edge */
+  }
+  
+  .gear-icon {
+    font-size: 50vh;
+    color: rgba(2, 0, 100, .4); /* Color of the gear */
+    animation: spin 10s linear infinite; /* Animation for spinning */
+  }
+  .product-button {
+    background: linear-gradient(to right, #020064, #fb0c0c); /* Apply gradient as background */
+    color: white;  /* Set text color to white */
+    border: 1px solid rgba(255, 0, 0, 0);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out; /* Smooth transition for background on hover */
+  }
+  
+  .product-button:hover {
+    transition: background-color 0.3s ease-in-out; /* Smooth transition for background on hover */
+    background: linear-gradient(to right, #ffffff, #fffffffa); /* Apply gradient as background */
+    border: 1px solid #fb0c0c;
+    color: #fb0c0c;
+  }
+
+  
+  /* Animation for spinning the gear */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

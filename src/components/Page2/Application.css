@@ -1,0 +1,94 @@
+.application-container {
+    padding: 20px;
+    background-color: #f9f9f900;
+    position: relative;
+  }
+  
+
+  .application-container::before , .application-container::after{
+    content: '';
+    position: absolute;
+    border-radius: 50%; /* Circular bubbles */
+    box-shadow: 0 0 100px rgba(255, 255, 255, 0.4); /* Glow effect for bubbles */
+    animation: move-bubbles 1s infinite linear;
+    z-index: -1;
+    filter: blur(100px);
+  }
+  
+  /* Size and position of the bubbles */
+  .application-container::before {
+    width: 400px;
+    height: 400px;
+    top: 50%;
+    left: 30%;
+    animation-duration: 10s;
+    background: rgba(255, 125, 125, 0.479); 
+    transform: translate(-30%,-50%);
+}
+
+.application-container::after {
+    width: 500px;
+    height: 500px;
+    top: 25%;
+    left: 40%;
+    transform: translate(-30%,-50%);
+    background: rgba(52, 77, 216, 0.397); 
+    animation-duration: 25s;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .application-category {
+    margin-bottom: 30px;
+  }
+  .application-cards{
+    height: 100%;
+    width: 100%;
+    padding: 1em 10rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1em;
+  }
+  .application-category h2 {
+    font-size: 2rem;
+    color: #020064;
+    margin-bottom: 20px;
+    
+  }
+  
+  .application-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .application-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, #020064, #fb0c0c);
+    -webkit-background-clip: text; 
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .application-card p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .application-card:hover {
+    transform: scale(1.05);
+  }
+  

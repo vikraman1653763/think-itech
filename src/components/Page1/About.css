@@ -1,0 +1,224 @@
+.About{
+  
+position: relative;
+}
+
+ 
+  /* Bubbles background effect */
+  .About::before, .About::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%; /* Circular bubbles */
+    box-shadow: 0 0 100px rgba(255, 255, 255, 0.4); /* Glow effect for bubbles */
+    animation: move-bubbles 1s infinite linear;
+    z-index: -1;
+    filter: blur(100px);
+  }
+  
+  /* Size and position of the bubbles */
+  .About::before {
+    width: 400px;
+    height: 400px;
+    top: 20%;
+    left: -10%;
+    background: rgba(255, 125, 125, 0.479); 
+    animation-duration: 10s;
+  }
+  
+  .About::after {
+    width: 500px;
+    height: 500px;
+    top: 40%;
+    left: 60%;
+    background: rgba(52, 77, 216, 0.397); 
+    animation-duration: 25s;
+  }
+  
+  /* Blurring effect on background */
+
+  /* Bubble movement animation */
+  @keyframes move-bubbles {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(150px, 150px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+.vision-mission {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 2rem;
+    position: relative;
+  }
+  
+  /* Background icon */
+  .background-icon {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+    opacity: 0.5; /* Set opacity to 0.5 */
+    z-index: 1; /* Place the icon behind the content */
+    font-size: 15rem; /* Make the icon big enough to cover the container */
+    color: #2563eb; /* You can adjust the color of the icon */
+  }
+  .background-icon svg:hover{
+    color: rgb(182, 4, 4);
+  }
+  
+  /* Each vision/mission item displayed as a card */
+  .vision-mission-item {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    border-radius: 16px; /* Rounded corners */
+    padding: 2rem;
+    width: 80%;
+    max-width: 800px;
+    margin-bottom: 2rem;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    backdrop-filter: blur(10px); /* Glassmorphism blur */
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect for cards */
+  .vision-mission-item:hover {
+    transform: translateY(-10px); /* Lift the card on hover */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Increased shadow for hover effect */
+  }
+  
+  /* Title styling */
+  .vision-mission-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1e3a8a;
+    margin-bottom: 1rem;
+  }
+  
+  /* Content styling */
+  .vision-mission-content {
+    font-size: 1.2rem;
+    color: #444;
+    line-height: 1.6;
+  }
+  
+  /* Responsive styling for smaller screens */
+  @media (max-width: 768px) {
+    .vision-mission-item {
+      width: 90%; /* Make cards take full width on smaller screens */
+    }
+  }
+  
+  
+  /* Additional styling can be added as needed */
+ /* Container for the patents section */
+.patents {
+    margin-bottom: 3rem;
+    padding: 2rem  10rem;
+    text-align: center;
+    color: #333;
+    text-align: center;
+  }
+  .patent-title-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+
+  }
+  .patent-title {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #020064, #fb0c0c);
+    -webkit-background-clip: text; 
+    background-clip: text;
+    color: transparent;
+    width:fit-content;
+  }
+  
+  .patent-subtitle {
+    font-size: 1.8rem;
+    color: #2563eb;
+    margin-top: 1rem;
+  }
+  
+  .patent-description {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+  }
+  
+  /* List container for patents */
+  .patent-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Individual patent item */
+  .patent-item {
+    width: 100%;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+  /* Title of each patent */
+  .patent-item-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1e3a8a;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Card list below each patent title */
+  .patent-card-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* Individual card for each patent description */
+  .patent-card {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    border-radius: 16px;  /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    backdrop-filter: blur(15px);  /* Glassmorphism blur */
+    width: 250px;  /* Fixed width for each card */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  
+  /* Hover effect for cards */
+  .patent-card:hover {
+    transform: translateY(-10px); /* Lift the card on hover */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Increased shadow for hover effect */
+  }
+  
+  /* Text inside the patent cards */
+  .patent-card-text {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 0.8rem;
+  }
+  
+  /* Responsive styling for smaller screens */
+  @media (max-width: 768px) {
+    .patent-item {
+      width: 90%;  /* Make the cards wider on small screens */
+    }
+  
+    .patent-card {
+      width: 100%; /* Make each card take the full width on smaller screens */
+    }
+  }
+  
