@@ -44,7 +44,7 @@ const ProductIntro = () => {
           </div>
       </div>
       <div className="product-intro-image">
-        <img src="/assets/bg.webp" alt="Drone" className="product-image" />
+        <img src="/assets/multi.webp" alt="Drone" className="product-image" />
       </div>
     </div>
   );

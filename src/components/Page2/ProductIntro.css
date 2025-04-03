@@ -6,6 +6,7 @@
     background-color: #f0f0f000;
 }
 
+
 .product-intro-text {
     flex: 1;
     padding-right: 20px;
@@ -67,7 +68,8 @@
     flex: 1;
     display: flex;
     justify-content: center;
-    }
+    position: relative;  
+  }
     
   .product-image {
     max-width: 100%;
@@ -75,3 +77,32 @@
     border-radius: 8px;
   }
   
+  .product-intro-image::before , .product-intro-image::after{
+    content: '';
+    position: absolute;
+    border-radius: 50%; /* Circular bubbles */
+    box-shadow: 0 0 100px rgba(255, 255, 255, 0.4); /* Glow effect for bubbles */
+    z-index: -1;
+    filter: blur(100px);
+  }
+  
+  /* Size and position of the bubbles */
+  .product-intro-image::before {
+    width: 300px;
+    height: 700px;
+    top: -10%;
+    left: 30%;
+    animation-duration: 10s;
+    background: rgba(255, 125, 125, 0.479); 
+    transform: translate(15%,1%);
+}
+
+.product-intro-image::after {
+    width: 900px;
+    height: 300px;
+    top: 12%;
+    left: -10%;
+    transform: translate(13%,10%);
+    background: rgba(52, 77, 216, 0.397); 
+    animation-duration: 25s;
+  }
