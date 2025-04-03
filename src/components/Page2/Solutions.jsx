@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,{useEffect}from 'react';
 import { BiSolidTimer } from "react-icons/bi";
 import { GiPathDistance } from "react-icons/gi";
 import { FaTools } from "react-icons/fa";
@@ -10,7 +10,10 @@ import 'aos/dist/aos.css';
 import './Solutions.css'; // Optional CSS file for styling
 
 const Solutions = () => {
-  // Array of solutions with icon, title, and description
+
+  useEffect(() => {
+         AOS.init({ duration: 1000 }); // Initialize AOS with duration for animations
+       }, []);
   const solutions = [
     {
       id: '1',
@@ -52,7 +55,7 @@ const Solutions = () => {
 
   return (
     <div className="sol-item-container">
-      <h2 className="sol-item-title" data-aos="zoom-in">Why Our Drones?</h2>
+      <h2 className="sol-item-title" >Why Our Drones?</h2>
 
       <div className="sol-item-cards">
         {/* Using map to generate cards dynamically */}

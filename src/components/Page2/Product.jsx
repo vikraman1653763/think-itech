@@ -40,7 +40,7 @@ const Product = () => {
     },
     {
       title: 'X 25 – Logistics Drone',
-      image: '/assets/xag25.png',  
+      image: '/assets/xag25.webp',  
       description: 'The X 25 Logistics Drone offers unmatched endurance and a high payload for extreme logistics operations.',
       specs: [
         { label: 'Payload', value: '25 kg with EO+IR Camera' },
@@ -56,7 +56,7 @@ const Product = () => {
     {
       id:'2',
       title: 'VT-X 12 – Loitering Munition – Swarm',
-      image: '/assets/vtol.png',  
+      image: '/assets/vtol.webp',  
       description: 'VT-X 12 is a powerful loitering munition designed for swarm operations with a long endurance and high speed.',
       specs: [
         { label: 'Payload', value: '12 kg with EO+IR Camera' },
@@ -72,7 +72,7 @@ const Product = () => {
     {
       id:'3',
       title: 'SKYWATCH 360-XS 11-ISR',
-      image: '/assets/xag25.png',  
+      image: '/assets/xag25.webp',  
       description: 'The SKYWATCH 360-XS 11-ISR is a versatile surveillance drone designed for intelligence gathering and reconnaissance.',
       specs: [
         { label: 'Payload', value: '1000 g' },
@@ -87,7 +87,7 @@ const Product = () => {
     },
     {
       title: 'SKYWATCH 360-XS 12-ISR',
-      image: '/assets/xag25.png',  
+      image: '/assets/s11.webp',  
       description: 'The SKYWATCH 360-XS 12-ISR is used for search and rescue, with capabilities for facial and vehicle recognition and anti-terror surveillance.',
       specs: [
         { label: 'Payload', value: '1000 g' },
@@ -102,7 +102,7 @@ const Product = () => {
     },
     {
       title: 'SKYWATCH 360-HS 12-ISR',
-      image: '/assets/xag25.png',  
+      image: '/assets/s11hs12.webp',  
       description: 'The SKYWATCH 360-HS 12-ISR is designed for military and enemy movement AI tracking reconnaissance.',
       specs: [
         { label: 'Payload', value: '1000 g' },

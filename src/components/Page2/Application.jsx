@@ -1,6 +1,7 @@
 import React ,{useEffect}from 'react';
 import './Application.css'; // Optional CSS file for styling
 import AOS from 'aos'; // Import AOS
+import 'aos/dist/aos.css';
 
 const Application = () => {
     useEffect(() => {
