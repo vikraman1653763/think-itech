@@ -72,7 +72,7 @@ const Product = () => {
     {
       id:'3',
       title: 'SKYWATCH 360-XS 11-ISR',
-      image: '/assets/xag25.webp',  
+      image: '/assets/s111.webp',  
       description: 'The SKYWATCH 360-XS 11-ISR is a versatile surveillance drone designed for intelligence gathering and reconnaissance.',
       specs: [
         { label: 'Payload', value: '1000 g' },
