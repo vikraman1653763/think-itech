@@ -44,7 +44,7 @@ const Application = () => {
 
   return (
     <div className="application-container">
-      <h1>Our Drone Applications Across Industries</h1>
+      <h1 className="application-h1">Our Drone Applications Across Industries</h1>
 
       {categories.map((category, index) => (
         <div key={index} className="application-category">

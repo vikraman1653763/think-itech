@@ -53,7 +53,8 @@ position: relative;
     flex-direction: column;
     align-items: center;
     margin-top: 3rem;
-    padding: 2rem;
+    padding: 2rem 10rem;
+    box-sizing: border-box;
     position: relative;
   }
   
@@ -71,7 +72,21 @@ position: relative;
   .background-icon svg:hover{
     color: rgb(182, 4, 4);
   }
-  
+  .vis-title{
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #020064, #fb0c0c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    width: fit-content;
+  }
+  .vis-desc{
+    font-size: 1.2rem;
+    color: #444;
+    line-height: 1.6;
+    text-align: center;
+  }
   /* Each vision/mission item displayed as a card */
   .vision-mission-item {
     background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
@@ -119,10 +134,11 @@ position: relative;
  /* Container for the patents section */
 .patents {
     margin-bottom: 3rem;
-    padding: 2rem  10rem;
+    padding: 2rem 10rem;
     text-align: center;
     color: #333;
     text-align: center;
+    box-sizing: border-box;
   }
   .patent-title-container{
     width: 100%;
@@ -147,9 +163,21 @@ position: relative;
     color: #2563eb;
     margin-top: 1rem;
   }
-  
+  .patent-header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .patent-image{
+    width: 30%;
+    border-radius: 10px;
+  }
   .patent-description {
+    width: 40%;
     font-size: 1.1rem;
+    line-height:2em;
     margin-bottom: 1.5rem;
     color: #555;
   }
@@ -209,6 +237,7 @@ position: relative;
     font-size: 1.1rem;
     color: #444;
     margin-bottom: 0.8rem;
+    text-align: center;
   }
   
   /* Responsive styling for smaller screens */
@@ -216,7 +245,7 @@ position: relative;
     .patent-item {
       width: 90%;  /* Make the cards wider on small screens */
     }
-  
+    
     .patent-card {
       width: 100%; /* Make each card take the full width on smaller screens */
     }

@@ -7,11 +7,11 @@ const VisionMission = () => {
   const visionAndMission = [
     {
       title: "Our Vision",
-      content: "To establish the United States as the global leader in drone manufacturing by fostering innovation, enhancing national security, and driving economic growth through advanced unmanned aerial systems.",
+      content: "To position the United States as the global leader in drone manufacturing by driving innovation, strengthening national security, and fueling economic growth through advanced unmanned aerial systems.",
     },
     {
       title: "Our Mission",
-      content: "We are committed to reshoring and expanding drone manufacturing in the U.S., delivering cutting-edge solutions for defense, commercial, agriculture, and logistical applications. By leveraging our established presence in India and investing in state-of-the-art U.S. production facilities, we ensure a secure supply chain, create high-tech jobs, and advance American technological leadership.",
+      content: "We are committed to expanding drone manufacturing in the U.S., delivering cutting-edge solutions for defense, surveillance, commercial, agriculture, and logistical applications. By leveraging our established and ongoing Research and Development (R&D) presence in-house and investing in state-of-the-art U.S. production facilities, we ensure a secure supply chain, create high-tech jobs, and advance American technological leadership.",
     },
   ];
 
@@ -25,6 +25,8 @@ const VisionMission = () => {
 
   return (
     <section className="vision-mission">
+        <h2 className='vis-title'>Pioneering the Future of Unmanned Aerial Systems</h2>
+        <p className='vis-desc'>Leading the evolution of next-generation drone technology, we are transforming multiple industries across the United States with cutting-edge unmanned aerial systems (UAS). Our advanced solutions serve the defense, commercial, agricultural, and logistical sectors, integrating patented innovations and USA-made Original Equipment Manufacturer (OEM) products. By setting new benchmarks in aerial intelligence, security, and automation, we are redefining the possibilities of unmanned flight.</p>
       <div className="background-icon">
         <GoGoal />
       </div>

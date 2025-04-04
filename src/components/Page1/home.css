@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   background-image: url('/assets/bg.webp');
+  position: relative;
 }
 
 .home-content {
@@ -18,16 +19,9 @@
   color: black;
 }
 
-.home-title {
+.think-logo{
   font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  background: linear-gradient(to right, #020064, #fb0c0c);
-  -webkit-background-clip: text; 
-  background-clip: text;
-  color: transparent;
 }
-
 
 .home-description {
   font-size: 1.2rem;
@@ -37,9 +31,17 @@
 
 .made-in-use {
   position: absolute;
-  bottom: -50%;
-  right: -50%;
+  bottom: 0%;
+  right: 20%;
   width: 20em;
+  transform: rotate(-20deg); 
+  height: auto;
+}
+.oem{
+  position: absolute;
+  bottom: 0%;
+  right: 5%;
+  width: 19.5em;
   transform: rotate(-20deg); 
   height: auto;
 }

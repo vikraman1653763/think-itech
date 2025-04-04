@@ -43,19 +43,21 @@
  .product-btns{
   display: flex;
   width: 100%;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
 }
   
    .learn-more-button  {
     background: linear-gradient(to right, #020064, #fb0c0c); /* Apply gradient as background */
     color: white;  /* Set text color to white */
     border: 1px solid rgba(255, 0, 0, 0);
-    padding: 10px 20px;
+    padding: 10px 0px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-    transition: background-color 0.3s ease-in-out; /* Smooth transition for background on hover */
+    transition: background-color 0.3s ease-in-out; 
+    width: 80%;
   }
   
   .learn-more-button:hover {
@@ -106,3 +108,64 @@
     background: rgba(52, 77, 216, 0.397); 
     animation-duration: 25s;
   }
+
+  .dropdown-group {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .dropdown-list {
+    list-style: none;
+    padding: 0;
+    /* margin: 0px 0 0; */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 100%;
+    
+    position: absolute;
+    top: 110%; /* just below the button */
+    left: 0;
+    right: 0;
+    z-index: 10;
+    
+    animation: none; /* we'll let Framer Motion handle animation */
+  }
+  
+  
+  .dropdown-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  .dropdown-item:last-child {
+    border-bottom: none;
+  }
+  
+  .dropdown-item:hover {
+    background: linear-gradient(to right, #020064, #fb0c0c); /* Apply gradient as background */
+    color: white;
+    cursor: pointer;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .caret-icon {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .caret-icon.rotate {
+    transform: rotate(180deg);
+  }
+  

@@ -22,7 +22,7 @@ const Footer = () => {
             </li>
         <li>
 
-         <MdOutlineMailOutline className='footer-icon'/> joanna.a@thinkitech.com 
+         <MdOutlineMailOutline className='footer-icon'/> contact.us@thinkitech.com  
         </li>
         </p>
       </div>

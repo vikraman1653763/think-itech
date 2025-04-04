@@ -6,7 +6,9 @@ const Navbar = () => {
   return (
     <nav className="nav-container">
       <div className="nav-right">
+      <Link to="/" className="nav-link">
         <img src="/assets/logo.webp" alt="Logo" className="nav-logo" />
+      </Link>
       </div>
       <div className="nav-left">
         <Link to="/" className="nav-link">About</Link>  {/* Use Link for navigation */}

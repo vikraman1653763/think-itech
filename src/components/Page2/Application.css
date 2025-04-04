@@ -1,10 +1,11 @@
 .application-container {
-    padding: 20px;
-    background-color: #f9f9f900;
-    position: relative;
+  background-color: #f9f9f900;
+  position: relative;
+  padding: 1em 10rem;
+  box-sizing: border-box;
   }
   
-
+  
   .application-container::before , .application-container::after{
     content: '';
     position: absolute;
@@ -20,7 +21,6 @@
     width: 400px;
     height: 400px;
     top: 50%;
-    
     left: 30%;
     animation-duration: 10s;
     background: rgba(255, 125, 125, 0.479); 
@@ -37,10 +37,11 @@
     animation-duration: 25s;
   }
 
-  h1 {
+.application-h1{
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 30px;
+    
   }
   
   .application-category {
@@ -49,19 +50,16 @@
   .application-cards{
     height: 100%;
     width: 100%;
-    padding: 1em 10rem;
-    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
-
     gap: 1em;
   }
   .application-category h2 {
     font-size: 2rem;
     color: #020064;
     margin-bottom: 20px;
-    
+    text-align: center;
   }
   
   .application-card {
@@ -71,6 +69,7 @@
     padding: 15px;
     margin-bottom: 15px;
     transition: transform 0.3s ease;
+    width: 33%;
   }
   
   .application-card h3 {
@@ -81,12 +80,16 @@
     -webkit-background-clip: text; 
     background-clip: text;
     color: transparent;
+    text-align: center;
+
   }
   
   .application-card p {
     font-size: 1rem;
     color: #666;
     line-height: 1.6;
+    text-align: center;
+
   }
   
   .application-card:hover {

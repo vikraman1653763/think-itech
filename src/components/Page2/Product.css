@@ -4,6 +4,7 @@
   align-items: center;
   gap: 30px;
   padding: 1em 10rem;
+  box-sizing: border-box;
 }
 
 .pro-item-card {
@@ -44,8 +45,10 @@
   border-collapse: collapse;
   margin-top: 20px;
   transition: transform 0.3s ease;
-
+  table-layout: fixed;
 }
+
+
 .pro-item-specs:hover {
   transform: scale(1.01);
   border-radius: 10px;

@@ -43,12 +43,15 @@ const Patents = () => {
       <div className='patent-title-container'>
       <h2 className="patent-title">PATENTS</h2>
       </div>
+      <div className='patent-header'>
       <p className="patent-description">
         Revolutionizing Unmanned Aerial Systems with Cutting-Edge Innovation. At the forefront of next-generation drone technology,
         our company is reshoring and expanding manufacturing in the United States, bringing state-of-the-art unmanned aerial systems
         (UAS) to the defense, commercial, agricultural, and logistical sectors. By integrating patented breakthrough innovations, we
         are setting new standards in aerial intelligence, security, and automation.
       </p>
+      <img  className='patent-image' src='/assets/pat.webp'/>
+      </div>
       <div className="patent-list">
         {patentsData.map((patent, index) => (
           <div
