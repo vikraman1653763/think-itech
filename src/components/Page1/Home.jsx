@@ -1,18 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './home.css';
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="home-container">
+      <video autoPlay loop muted playsInline className="bg-video">
+        <source src="/assets/bg.webm" type="video/webm" />
+        Your browser does not support the video tag.
+      </video>
+
       <div className="home-content">
-        {/* <h1 className="home-title"><span className='span1'>THINK</span><span className='span2'>ITECH</span> </h1> */}
-        <img src='/assets/think.webp' className='think-logo'/>
+        <img src='/assets/think.webp' className='think-logo' alt="Think Logo" />
         <p className="home-description">
-        At Think ITECH, we're more than tech pioneers—we're problem-solvers shaping the future of aerospace with advanced drone manufacturing. Based in the United States, we are transforming industries through cutting-edge innovation in autonomous UAV systems.
+          At Think ITECH, we're more than tech pioneers—we're problem-solvers shaping the future of aerospace with advanced drone manufacturing. Based in the United States, we are transforming industries through cutting-edge innovation in autonomous UAV systems.
         </p>
-        </div>
+      </div>
         <img src="/assets/made.webp" alt="Made in Use" className="made-in-use" />
-        <img src="/assets/OEM.webp" alt="Made in Use" className="oem" />
+        <img src="/assets/OEM.webp" alt="OEM" className="oem" />
     </div>
   );
 };

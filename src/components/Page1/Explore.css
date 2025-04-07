@@ -21,8 +21,8 @@
     animation: spin 10s linear infinite; /* Animation for spinning */
   }
   .product-button {
-    background: linear-gradient(to right, #020064, #fb0c0c); /* Apply gradient as background */
-    color: white;  /* Set text color to white */
+    background: linear-gradient(to right, #020064, #fb0c0c); 
+    color: white;
     border: 1px solid rgba(255, 0, 0, 0);
     padding: 10px 20px;
     font-size: 16px;

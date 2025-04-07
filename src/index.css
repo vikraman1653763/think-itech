@@ -1,9 +1,3 @@
-/* General Styles */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f3f4f6;
-}
 
 
 
@@ -75,21 +69,24 @@ h2 {
 .product-card a:hover {
   text-decoration: underline;
 }
+/* General Styles */
 
 
 /* Apply gradient background with bubble-like shapes */
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(to top right, rgb(255, 255, 255), #ebebeb); /* Base gradient */
+  background: linear-gradient(to top right, rgb(255, 255, 255), #ebebeb);
+  background-repeat: no-repeat; /* Ensures background doesn't repeat */
+  background-size: cover;       /* Optional: makes sure it covers the full area */
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Poppins', sans-serif;
-  color: #000; 
-
+  color: #000;
 }
+
 
  
   

@@ -37,7 +37,7 @@ const Solutions = () => {
       id: '4',
       icon: <FaSackDollar />,
       title: 'Cost-effective Manufacturing',
-      description: 'Restored in the US, with NDAA and Blue certification ensuring high-quality standards.',
+      description: 'Restored in the US, with NDAA ensuring high-quality standards.',
     },
     {
       id: '5',
@@ -49,10 +49,10 @@ const Solutions = () => {
       id: '6',
       icon: <GrCertificate />,
       title: 'Reliable Patented Technology',
-      description: 'Our patented technology, together with NDAA and Blue certification, ensures unmatched reliability.',
+      description: 'Our patented technology, together with NDAA ensures unmatched reliability.',
     },
   ];
-
+  
   return (
     <div className="sol-item-container">
       <h2 className="sol-item-title" >Why Our Drones?</h2>
