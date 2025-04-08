@@ -49,7 +49,7 @@ const Solutions = () => {
       id: '6',
       icon: <GrCertificate />,
       title: 'Reliable Patented Technology',
-      description: 'Our patented technology, together with NDAA ensures unmatched reliability.',
+      description: 'Our patented technology, together with NDAA Compliance, ensures unmatched reliability.',
     },
   ];
   

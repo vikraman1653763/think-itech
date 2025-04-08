@@ -40,17 +40,17 @@
 
 .made-in-use {
   position: absolute;
-  bottom: 22%;
+  bottom: 5%;
   right: 0%;
-  width: 12em;
+  width: 22em;
   transform: rotate(-20deg); 
   height: auto;
 }
 .oem{
   position: absolute;
-  bottom: 5%;
-  right: 8%;
-  width: 11em;
+  bottom: 10%;
+  right: 5%;
+  width: 6em;
   transform: rotate(-20deg); 
   height: auto;
 }
