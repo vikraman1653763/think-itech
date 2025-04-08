@@ -1,5 +1,3 @@
-/* Prototype.css */
-
 .prototype-container {
     text-align: center;
     padding: 20px;
@@ -40,8 +38,8 @@
   }
 
   
-  .prototype-container h1 {
-    font-size: 3rem;
+  .prototype-title {
+   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
   background: linear-gradient(to right, #020064, #fb0c0c);
@@ -50,10 +48,41 @@
   color: transparent;
   }
   
-  .prototype-container img {
-    max-width: 70%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  .prototype-row-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+  
+  .prototype-card {
+    width: calc(30% - 1em);
+  }
+  
+  .prototype-card:hover img {
+    transform:scale(1.2);
+    transition: transform 0.3s ease;
+
+  }
+  
+  .prototype-image {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+
+  }
+  
+  .prototype-name {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0.5rem 0;
+}
+
+.prototype-type {
+    font-size: 1.4rem;
+    color: #020064;
   }
   
