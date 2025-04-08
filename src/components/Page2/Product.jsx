@@ -20,7 +20,7 @@ const Product = () => {
           specs: [
             { label: 'Payload', value: '33.07 lb (15 Kg with EO+IR Camera)' },
             { label: 'Endurance', value: 'Up to 35 minutes' },
-            { label: 'Operating temperature', value: '-20°C to 50°C' },
+            { label: 'Operating temperature', value: '-4°F to 122°F (-20°C to 50°C)' },
             { label: 'Wind resistance', value: '44.74 mph (20 m/s)' },
             { label: 'Max speed', value: '44.74 mph (20 m/s)' },
             { label: 'Range', value: '6.21 mi (10 km)' },
@@ -37,7 +37,7 @@ const Product = () => {
           specs: [
             { label: 'Payload', value: '44.09 lb (20 kg with EO+IR Camera)' },
             { label: 'Endurance', value: 'Up to 40 minutes' },
-            { label: 'Operating temperature', value: '-20°C to 50°C' },
+            { label: 'Operating temperature', value: '-4°F to 122°F (-20°C to 50°C)' },
             { label: 'Wind resistance', value: '44.74 mph (20 m/s)' },
             { label: 'Max speed', value: '44.74 mph (20 m/s)' },
             { label: 'Range', value: '6.21 mi (10 km)' },
@@ -54,7 +54,7 @@ const Product = () => {
           specs: [
             { label: 'Payload', value: '55.12 lb (25 kg with EO+IR Camera)' },
             { label: 'Endurance', value: 'Up to 60 minutes' },
-            { label: 'Operating temperature', value: '-20°C to 50°C' },
+            { label: 'Operating temperature', value: '-4°F to 122°F (-20°C to 50°C)' },
             { label: 'Wind resistance', value: '44.74 mph (20 m/s)' },
             { label: 'Max speed', value: '44.74 mph (20 m/s)' },
             { label: 'Range', value: '6.21 mi (10 km)' },
@@ -76,7 +76,7 @@ const Product = () => {
           specs: [
             { label: 'Payload', value: '26.46 lb (12 kg with EO+IR Camera)' },
             { label: 'Endurance', value: 'Up to 4 hours' },
-            { label: 'Operating temperature', value: '-20°C to 50°C' },
+            { label: 'Operating temperature', value: '-4°F to 122°F (-20°C to 50°C)' },
             { label: 'Wind resistance', value: '67.11 mph (30 m/s)' },
             { label: 'Max speed', value: '89.48 mph (40 m/s)' },
             { label: 'Range', value: '62.14 mi (100 km)' },
@@ -98,7 +98,7 @@ const Product = () => {
           specs: [
             { label: 'Payload', value: '2.2 lb (1000 g)' },
             { label: 'Endurance', value: 'Up to 75 minutes' },
-            { label: 'Operating temperature', value: '-20°C to 50°C' },
+            { label: 'Operating temperature', value: '-4°F to 122°F (-20°C to 50°C)' },
             { label: 'Wind resistance', value: '33.55 mph (15 m/s)' },
             { label: 'Max speed', value: '40.26 mph (18 m/s)' },
             { label: 'Range', value: '6.21 mi (10 km)' },
@@ -115,7 +115,7 @@ const Product = () => {
           specs: [
             { label: 'Payload', value: '2.2 lb (1000 g)' },
             { label: 'Endurance', value: 'Up to 60 minutes' },
-            { label: 'Operating temperature', value: '-20°C to 50°C' },
+            { label: 'Operating temperature', value: '-4°F to 122°F (-20°C to 50°C)' },
             { label: 'Wind resistance', value: '33.55 mph (15 m/s)' },
             { label: 'Max speed', value: '40.26 mph (18 m/s)' },
             { label: 'Range', value: '6.21 mi (10 km)' },
@@ -132,7 +132,7 @@ const Product = () => {
           specs: [
             { label: 'Payload', value: '2.2 lb (1000 g)' },
             { label: 'Endurance', value: 'Up to 60 minutes' },
-            { label: 'Operating temperature', value: '-20°C to 50°C' },
+            { label: 'Operating temperature', value: '-4°F to 122°F (-20°C to 50°C)' },
             { label: 'Wind resistance', value: '33.55 mph (15 m/s)' },
             { label: 'Max speed', value: '40.26 mph (18 m/s)' },
             { label: 'Range', value: '6.21 mi (10 km)' },
@@ -179,7 +179,7 @@ const Product = () => {
       ]
     }
   ];
-
+  
   return (
     <div className="pro-item-container">
       {droneCategories.map((group, index) => (
