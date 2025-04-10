@@ -1,3 +1,5 @@
+// Product page 
+
 import React from 'react'
 import ProductIntro from './Page2/ProductIntro'
 import Application from './Page2/Application'

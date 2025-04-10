@@ -38,22 +38,25 @@
 
 
 
-.made-in-use {
-  position: absolute;
-  bottom: 12%;
-  right: 2%;
-  width: 18em;
-  transform: rotate(-20deg); 
-  height: auto;
-}
-.oem{
+.made-in-usa {
   position: absolute;
   bottom: 6%;
-  right: 2%;
-  width: 11em;
-  transform: rotate(-20deg); 
+  right: 6%;
+  width: 15em;
+  transform: rotate(-20deg);
   height: auto;
 }
+
+.oem {
+  position: absolute;
+  bottom: 4%;
+  right: 2%;
+  width: 11em;
+  transform: rotate(-20deg);
+  height: auto;
+}
+
+
 
 .bg-video {
   position: absolute;
@@ -64,4 +67,89 @@
   object-fit: cover;
   z-index: 0;
 
+}
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  .home-content {
+    padding: 1.5rem;
+    font-size: 1rem;
+    max-width: 90%;
+    left: 50%;
+    transform: translate(-50%, -95%);
+  }
+
+  .think-logo {
+    width: 70%;
+    font-size: 2.2rem;
+  }
+
+  .home-description {
+    font-size: 1rem;
+  }
+
+  .made-in-usa {
+    width: 12em;
+    right: 4%;
+    bottom: 8%;
+  }
+
+  .oem {
+    width: 9em;
+    right: 2%;
+    bottom: 6%;
+  }
+}
+
+
+/* Mobile View */
+@media (max-width: 767px) {
+  .home-container {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    background-image: none;
+  }
+
+  .home-content {
+    width: 100%;
+    max-width: 85%;
+    padding: .1rem;
+    top: auto;
+    left: 0%;
+    transform: translate(0%, 0);
+    position: relative;
+    margin-top: 2rem;
+    backdrop-filter: blur(5px);
+    background-color: #ffffffad;
+  }
+
+  .think-logo {
+    width: 90%;
+    font-size: 1.8rem;
+    margin-bottom: .5em;
+  }
+
+  .home-description {
+    font-size: 0.9rem;
+    max-width: 100%;
+    padding: .5em;
+  }
+
+  .made-in-usa{
+    position: relative;
+    transform: none;
+    bottom: auto;
+    right: auto;
+    width: 8em;
+    margin: 1em 0 0 0 ;
+    display: block;
+  }
+  .bg-video {
+    position: relative;  
+    background-image: url('/assets/bg.webp');
+    background-size: cover;
+    background-position: center;
+  }
 }

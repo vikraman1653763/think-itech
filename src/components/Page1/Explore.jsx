@@ -1,13 +1,13 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';  // Import the useNavigate hook
+import { useNavigate } from 'react-router-dom'; 
 import './Explore.css';
-import { GiBigGear } from "react-icons/gi";  // Import the gear icon
+import { GiBigGear } from "react-icons/gi"; 
 
 const Explore = () => {
   const navigate = useNavigate();
 
   const goToProductPage = () => {
-    navigate('/product');  // Navigate to the product page when the button is clicked
+    navigate('/product'); 
   };
 
   return (

@@ -19,8 +19,8 @@ const Home = () => {
           At Think ITECH, we're more than tech pioneers—we're problem-solvers shaping the future of aerospace with advanced drone manufacturing. Based in the United States, we are transforming industries through cutting-edge innovation in autonomous UAV systems.
         </p>
       </div>
-        <img src="/assets/made.webp" alt="Made in Use" className="made-in-use" />
-        <img src="/assets/OEM.webp" alt="OEM" className="oem" />
+      
+        <img src="/assets/mo.webp" alt="Made in Usa" className="made-in-usa" />
     </div>
   );
 };

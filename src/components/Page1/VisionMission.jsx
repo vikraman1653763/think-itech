@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { GoGoal } from 'react-icons/go';
-import AOS from 'aos'; // Import AOS
-import 'aos/dist/aos.css'; // Import AOS styles
+import AOS from 'aos'; 
+import 'aos/dist/aos.css'; 
 
 const VisionMission = () => {
   const visionAndMission = [
@@ -15,11 +15,10 @@ const VisionMission = () => {
     },
   ];
 
-  // Initialize AOS when the component mounts
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Duration of the animation
-      once: true, // Animation will only happen once
+      duration: 1000,
+      once: true,
     });
   }, []);
 

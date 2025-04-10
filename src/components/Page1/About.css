@@ -1,21 +1,19 @@
 .About{
-  
+  overflow: hidden;
 position: relative;
 }
 
  
-  /* Bubbles background effect */
   .About::before, .About::after {
     content: '';
     position: absolute;
-    border-radius: 50%; /* Circular bubbles */
-    box-shadow: 0 0 100px rgba(255, 255, 255, 0.4); /* Glow effect for bubbles */
+    border-radius: 50%;
+    box-shadow: 0 0 100px rgba(255, 255, 255, 0.4); 
     animation: move-bubbles 1s infinite linear;
     z-index: -1;
     filter: blur(100px);
   }
   
-  /* Size and position of the bubbles */
   .About::before {
     width: 400px;
     height: 400px;
@@ -34,9 +32,7 @@ position: relative;
     animation-duration: 25s;
   }
   
-  /* Blurring effect on background */
 
-  /* Bubble movement animation */
   @keyframes move-bubbles {
     0% {
       transform: translate(0, 0);
@@ -58,16 +54,15 @@ position: relative;
     position: relative;
   }
   
-  /* Background icon */
   .background-icon {
     position: absolute;
     top: 50%;
     left: 10%;
     transform: translate(-10%, -50%);
-    opacity: 0.5; /* Set opacity to 0.5 */
-    z-index: 1; /* Place the icon behind the content */
-    font-size: 15rem; /* Make the icon big enough to cover the container */
-    color: #2563eb; /* You can adjust the color of the icon */
+    opacity: 0.5; 
+    z-index: 1;
+    font-size: 15rem; 
+    color: #2563eb; 
   }
   .background-icon svg:hover{
     color: rgb(182, 4, 4);
@@ -87,27 +82,24 @@ position: relative;
     line-height: 1.6;
     text-align: center;
   }
-  /* Each vision/mission item displayed as a card */
   .vision-mission-item {
-    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
-    border-radius: 16px; /* Rounded corners */
+    background: rgba(255, 255, 255, 0.2); 
+    border-radius: 16px; 
     padding: 2rem;
     width: 80%;
     max-width: 800px;
     margin-bottom: 2rem;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow */
-    backdrop-filter: blur(10px); /* Glassmorphism blur */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px); 
     text-align: center;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
   }
   
-  /* Hover effect for cards */
   .vision-mission-item:hover {
-    transform: translateY(-10px); /* Lift the card on hover */
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Increased shadow for hover effect */
+    transform: translateY(-10px); 
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); 
   }
   
-  /* Title styling */
   .vision-mission-title {
     font-size: 2rem;
     font-weight: bold;
@@ -115,23 +107,19 @@ position: relative;
     margin-bottom: 1rem;
   }
   
-  /* Content styling */
   .vision-mission-content {
     font-size: 1.2rem;
     color: #444;
     line-height: 1.6;
   }
   
-  /* Responsive styling for smaller screens */
   @media (max-width: 768px) {
     .vision-mission-item {
-      width: 90%; /* Make cards take full width on smaller screens */
+      width: 90%; 
     }
   }
   
-  
-  /* Additional styling can be added as needed */
- /* Container for the patents section */
+ 
 .patents {
     margin-bottom: 3rem;
     padding: 2rem 10rem;
@@ -139,6 +127,7 @@ position: relative;
     color: #333;
     text-align: center;
     box-sizing: border-box;
+
   }
   .patent-title-container{
     width: 100%;
@@ -182,7 +171,6 @@ position: relative;
     color: #555;
   }
   
-  /* List container for patents */
   .patent-list {
     display: flex;
     flex-wrap: wrap;
@@ -190,14 +178,12 @@ position: relative;
     gap: 20px;
   }
   
-  /* Individual patent item */
   .patent-item {
     width: 100%;
     margin-bottom: 3rem;
     text-align: center;
   }
   
-  /* Title of each patent */
   .patent-item-title {
     font-size: 1.8rem;
     font-weight: bold;
@@ -205,7 +191,6 @@ position: relative;
     margin-bottom: 1.5rem;
   }
   
-  /* Card list below each patent title */
   .patent-card-list {
     display: flex;
     justify-content: center;
@@ -213,26 +198,23 @@ position: relative;
     flex-wrap: wrap;
   }
   
-  /* Individual card for each patent description */
   .patent-card {
-    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
-    border-radius: 16px;  /* Rounded corners */
+    background: rgba(255, 255, 255, 0.2); 
+    border-radius: 16px; 
     padding: 20px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    backdrop-filter: blur(15px);  /* Glassmorphism blur */
-    width: 250px;  /* Fixed width for each card */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);  
+    width: 250px;  
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
     text-align: left;
     margin-bottom: 1rem;
   }
   
-  /* Hover effect for cards */
   .patent-card:hover {
-    transform: translateY(-10px); /* Lift the card on hover */
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Increased shadow for hover effect */
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); 
   }
   
-  /* Text inside the patent cards */
   .patent-card-text {
     font-size: 1.1rem;
     color: #444;
@@ -240,14 +222,125 @@ position: relative;
     text-align: center;
   }
   
-  /* Responsive styling for smaller screens */
   @media (max-width: 768px) {
     .patent-item {
-      width: 90%;  /* Make the cards wider on small screens */
+      width: 90%; 
     }
     
     .patent-card {
-      width: 100%; /* Make each card take the full width on smaller screens */
+      width: 100%; 
     }
   }
-  
+  /* Tablet view: 768px - 1024px */
+@media (max-width: 1024px) {
+  .vision-mission {
+    padding: 2rem 4rem;
+  }
+
+  .vis-title {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .vis-desc {
+    font-size: 1rem;
+  }
+
+  .background-icon {
+    font-size: 10rem;
+    left: 5%;
+    transform: translate(-5%, -50%);
+  }
+
+  .patents {
+    padding: 2rem 4rem;
+  }
+
+  .patent-description {
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .patent-image {
+    width: 80%;
+    margin-top: 1.5rem;
+  }
+
+  .patent-card {
+    width: 200px;
+  }
+}
+
+
+/* Mobile view: below 768px */
+@media (max-width: 768px) {
+  .vision-mission {
+    padding: 1rem;
+  }
+
+  .vis-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .vis-desc {
+    font-size: 0.95rem;
+    text-align: justify;
+  }
+
+  .background-icon {
+    display: none; 
+  }
+
+  .vision-mission-item {
+    width: 80%;
+    padding: 1.2rem;
+  }
+
+  .vision-mission-title {
+    font-size: 1.5rem;
+  }
+
+  .vision-mission-content {
+    font-size: 1rem;
+  }
+
+  .patents {
+    padding: 1rem;
+  }
+
+  .patent-title {
+    font-size: 2rem;
+  }
+
+  .patent-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .patent-description {
+    width: 100%;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+
+  .patent-image {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .patent-card {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .patent-item-title {
+    font-size: 1.4rem;
+  }
+
+  .patent-card-text {
+    font-size: 1rem;
+  }
+}

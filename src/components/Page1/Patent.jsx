@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import AOS from 'aos'; // Import AOS
-import 'aos/dist/aos.css'; // Import AOS styles
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 const Patents = () => {
   const patentsData = [
@@ -30,11 +30,10 @@ const Patents = () => {
     },
   ];
 
-  // Initialize AOS when the component mounts
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Duration of the animation
-      once: true, // Animation will only happen once
+      duration: 1000,
+      once: true,
     });
   }, []);
 
@@ -65,7 +64,7 @@ const Patents = () => {
                 className="patent-card"
                 key={idx}
                 data-aos="fade-up"
-                data-aos-delay={idx * 200} // Set delay based on index (200ms increment per item)
+                data-aos-delay={idx * 200}
               >
                 <p className="patent-card-text">{desc}</p>
               </div>

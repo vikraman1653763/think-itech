@@ -1,18 +1,30 @@
-import React from 'react';
-import { Link } from 'react-router-dom';  // Import Link from react-router-dom
-import './Navbar.css'; // Optional CSS file for styling
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';  
+import './Navbar.css';
 
 const Navbar = () => {
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <nav className="nav-container">
       <div className="nav-right">
-      <Link to="/" className="nav-link">
-        <img src="/assets/logo.webp" alt="Logo" className="nav-logo" />
-      </Link>
+        <Link to="/" className="nav-link">
+          <img src="/assets/logo.webp" alt="Logo" className="nav-logo" />
+        </Link>
+
+        <div className="hamburger" onClick={toggleMenu}>
+          ☰
+        </div>
       </div>
-      <div className="nav-left">
-        <Link to="/" className="nav-link">About</Link>  {/* Use Link for navigation */}
-        <Link to="/product" className="nav-link">Product</Link>  {/* Use Link for navigation */}
+
+      <div className={`nav-left ${isMobileMenuOpen ? 'open' : ''}`}>
+        <Link to="/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Home</Link>  
+        <Link to="/about" className="nav-link" onClick={() => setMobileMenuOpen(false)}>About</Link>  
+        <Link to="/product" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Product</Link>  
       </div>
     </nav>
   );
