@@ -12,7 +12,7 @@ const teamProfiles = [
     photo: '/assets/person2.webp',
   },
   {
-    name: 'James Joy',
+    name: 'Joseph Joy',
     title: 'Chief Financial Officer',
     photo: '/assets/person3.webp',
   },

@@ -96,3 +96,71 @@
     transform: scale(1.05);
   }
   
+  /* Tablet View (768px - 1024px) */
+@media (max-width: 1024px) {
+  .application-container {
+    padding: 1em 3rem;
+  }
+
+  .application-h1 {
+    font-size: 2rem;
+  }
+
+  .application-cards {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .application-card {
+    width: 45%;
+  }
+
+  .application-category h2 {
+    font-size: 1.6rem;
+  }
+
+  .application-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .application-card p {
+    font-size: 0.95rem;
+  }
+}
+
+
+/* Mobile View (up to 768px) */
+@media (max-width: 768px) {
+  .application-container {
+    padding: .5em ;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .application-h1 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+
+  .application-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .application-card {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+
+  .application-category h2 {
+    font-size: 1.4rem;
+  }
+
+  .application-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .application-card p {
+    font-size: 0.9rem;
+  }
+}

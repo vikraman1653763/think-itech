@@ -60,3 +60,65 @@
     }
   }
   
+  /* Tablet View (768px - 1024px) */
+@media (max-width: 1024px) {
+  .sol-item-container {
+    padding: 30px 20px;
+  }
+
+  .sol-item-title {
+    font-size: 2rem;
+  }
+
+  .sol-item-card {
+    width: 45%;
+  }
+
+  .sol-item-icon {
+    font-size: 2.5rem;
+  }
+
+  .sol-item-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .sol-item-card p {
+    font-size: 0.95rem;
+  }
+}
+
+
+/* Mobile View (up to 768px) */
+@media (max-width: 768px) {
+  .sol-item-container {
+    padding: 20px 10px;
+  }
+
+  .sol-item-title {
+    font-size: 1.6rem;
+  }
+
+  .sol-item-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sol-item-card {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+
+  .sol-item-icon {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+
+  .sol-item-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .sol-item-card p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
