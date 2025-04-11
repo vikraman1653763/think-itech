@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css';  // Import the CSS file for styles
+import './Footer.css';  
 import { SiGooglemaps } from "react-icons/si";
 import { FaPhone } from "react-icons/fa6";
 import { MdOutlineMailOutline } from "react-icons/md";

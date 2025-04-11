@@ -4,7 +4,7 @@
     align-items: center;
     padding: 20px;
 
-    background-color: #020064;  /* Change background color as needed */
+    background-color: #020064;  
     color: white;
   }
   
@@ -15,7 +15,7 @@
   }
   
   .footer-logo {
-    width: 200px;  /* Adjust logo size as needed */
+    width: 200px; 
     height: auto;
     margin-right: 10px;
     border-radius: 10px;

@@ -9,14 +9,13 @@
   .application-container::before , .application-container::after{
     content: '';
     position: absolute;
-    border-radius: 50%; /* Circular bubbles */
-    box-shadow: 0 0 100px rgba(255, 255, 255, 0.4); /* Glow effect for bubbles */
+    border-radius: 50%; 
+    box-shadow: 0 0 100px rgba(255, 255, 255, 0.4);
     animation: move-bubbles 1s infinite linear;
     z-index: -1;
     filter: blur(100px);
   }
   
-  /* Size and position of the bubbles */
   .application-container::before {
     width: 400px;
     height: 400px;

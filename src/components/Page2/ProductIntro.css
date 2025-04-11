@@ -153,7 +153,7 @@
   }
   
   .dropdown-item:hover {
-    background: linear-gradient(to right, #020064, #fb0c0c); /* Apply gradient as background */
+    background: linear-gradient(to right, #020064, #fb0c0c); 
     color: white;
     cursor: pointer;
   }

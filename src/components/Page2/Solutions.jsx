@@ -7,12 +7,12 @@ import { FaAward } from "react-icons/fa6";
 import { GrCertificate } from "react-icons/gr";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import './Solutions.css'; // Optional CSS file for styling
+import './Solutions.css'; 
 
 const Solutions = () => {
 
   useEffect(() => {
-         AOS.init({ duration: 1000 }); // Initialize AOS with duration for animations
+         AOS.init({ duration: 1000 }); 
        }, []);
   const solutions = [
     {
@@ -58,7 +58,6 @@ const Solutions = () => {
       <h2 className="sol-item-title" >Why Our Drones?</h2>
 
       <div className="sol-item-cards">
-        {/* Using map to generate cards dynamically */}
         {solutions.map((solution) => (
           <div key={solution.id} className="sol-item-card" data-aos="zoom-in">
             <div className="sol-item-icon">

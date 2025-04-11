@@ -15,7 +15,7 @@ const UpButton = () => {
       style={{
         height: '50px',
         width: '50px',
-        position: 'fixed',  // Use 'fixed' instead of 'absolute'
+        position: 'fixed', 
         bottom: '20px',
         right: '20px',
         borderRadius: '50%',

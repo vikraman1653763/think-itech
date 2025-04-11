@@ -1,11 +1,11 @@
 import React ,{useEffect}from 'react';
-import './Application.css'; // Optional CSS file for styling
-import AOS from 'aos'; // Import AOS
+import './Application.css'; 
+import AOS from 'aos'; 
 import 'aos/dist/aos.css';
 
 const Application = () => {
     useEffect(() => {
-        AOS.init({ duration: 1000 }); // Initialize AOS with duration for animations
+        AOS.init({ duration: 1000 }); 
       }, []);
     
   const categories = [
