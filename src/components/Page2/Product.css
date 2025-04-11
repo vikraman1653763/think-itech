@@ -179,5 +179,6 @@
   .pro-item-card {
     padding: 1rem 0.5rem;
     border-radius: 8px;
+    box-sizing: border-box;
   }
 }

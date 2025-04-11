@@ -4,7 +4,6 @@
     justify-content: space-between;
     padding: 40px;
     background-color: #f0f0f000;
-    overflow: hidden;
 }
 
 
@@ -41,14 +40,15 @@
     text-align: center;
 }
   
- .product-btns{
+.product-btns {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .5rem; 
   width: 100%;
-  justify-content: space-between;
-  flex-wrap: nowrap;
   box-sizing: border-box;
 }
-  
+
    .learn-more-button  {
     background: linear-gradient(to right, #020064, #fb0c0c); 
     color: white;  
@@ -110,17 +110,18 @@
     animation-duration: 25s;
   }
 
-  .dropdown-group {
-    position: relative;
-    width: 100%;
-    max-width: 300px;
-    text-align: center;
-  }
+.dropdown-group {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  flex: 1 1 200px; 
+  text-align: center;
+}
+
   
   .dropdown-list {
     list-style: none;
     padding: 0;
-    /* margin: 0px 0 0; */
     border: 1px solid #ddd;
     border-radius: 5px;
     background-color: white;
@@ -129,12 +130,12 @@
     width: 100%;
     
     position: absolute;
-    top: 110%; /* just below the button */
+    top: 110%; 
     left: 0;
     right: 0;
     z-index: 10;
     
-    animation: none; /* we'll let Framer Motion handle animation */
+    animation: none; 
   }
   
   
@@ -216,6 +217,8 @@
   .product-intro {
     flex-direction: column;
     padding: 1.5rem 1rem;
+    overflow: hidden;
+
   }
 
   .product-title {

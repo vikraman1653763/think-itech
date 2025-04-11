@@ -71,6 +71,15 @@
 
 /* Tablet View */
 @media (max-width: 1024px) {
+
+  .home-container{
+    background-image: none;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    background-image: none;
+  }
   .home-content {
     padding: 1.5rem;
     font-size: 1rem;
@@ -98,6 +107,12 @@
     width: 9em;
     right: 2%;
     bottom: 6%;
+  }
+  .bg-video {
+    position: relative;  
+    background-image: url('/assets/bg.webp');
+    background-size: cover;
+    background-position: center;
   }
 }
 
