@@ -11,6 +11,8 @@ const droneData = [
   { name: 'AGR-10', type: 'Precision Farming Drone', image: '/assets/l8.webp' },
   { name: 'X-20', type: 'Mid-Range Cargo Drone', image: '/assets/l5.webp' },
   { name: 'XS 11-ISR', type: 'Reconnaissance Drone', image: '/assets/l9.webp' },
+  { name: 'Tethered-X1', type: 'Tethered Drone', image: '/assets/l10.webp' },
+
 ];
 
 const Prototype = () => {

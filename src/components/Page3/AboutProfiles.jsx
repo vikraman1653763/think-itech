@@ -16,8 +16,14 @@ const teamProfiles = [
     title: 'Chief Financial Officer',
     photo: '/assets/person3.webp',
   },
+  {
+    name: 'Stephen Adams',
+    title: 'Chief Operating Officer for Manufacturing',
+    photo: '/assets/person4.webp',
+  },
 
 ];
+
 
 const AboutProfiles = () => {
   return (
