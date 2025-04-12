@@ -44,7 +44,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: .5rem; 
+  gap: 2rem; 
   width: 100%;
   box-sizing: border-box;
 }
@@ -113,12 +113,13 @@
 .dropdown-group {
   position: relative;
   width: 100%;
-  max-width: 300px;
-  flex: 1 1 200px; 
+  max-width: 220px;
+  flex: 0 1 200px; 
   text-align: center;
 }
 
-  
+
+
   .dropdown-list {
     list-style: none;
     padding: 0;

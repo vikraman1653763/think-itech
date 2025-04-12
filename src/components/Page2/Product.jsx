@@ -183,43 +183,49 @@ const Product = () => {
       drones: [
         {
           id: '10',
-          title: 'Tethered-X1 – Persistent Surveillance Drone',
+          title: 'XT-11 – Persistent Surveillance Drone',
           image: '/assets/tethered.webp',
-          description: 'Tethered-X1 is a continuous surveillance drone system ideal for border security, public event monitoring, and critical infrastructure protection. It ensures uninterrupted aerial observation with a power and data tether.',
+          description: 'XT-11 is a continuous surveillance drone system built for critical infrastructure monitoring, crowd observation, and tactical overwatch. With a power and data tether, it offers uninterrupted aerial operation.',
           specs: [
-            { label: 'Payload', value: 'Up to 6.6 lb (3 kg)' },
+            { label: 'Payload', value: '2.2 lb (1 kg)' },
             { label: 'Endurance', value: 'Unlimited (via tethered power supply)' },
-            { label: 'Operating temperature', value: '-4°F to 113°F (-20°C to 45°C)' },
-            { label: 'Wind resistance', value: '39.14 mph (17.5 m/s)' },
+            { label: 'Operating temperature', value: '−4°F to 113°F (−20°C to 45°C)' },
+            { label: 'Wind resistance', value: '39.1 mph (17.5 m/s)' },
             { label: 'Max altitude (above ground)', value: '492 ft (150 m)' },
             { label: 'Communication Link', value: 'Wired + Wireless hybrid' },
             { label: 'Waterproof Rating', value: 'IP54' },
-            { label: 'Use Case', value: 'Border patrol, surveillance over crowds, critical asset monitoring' }
+            { label: 'Use Case', value: 'Surveillance over crowds, critical asset monitoring, tactical overwatch' }
           ]
         }
       ]
-    },
+    }
+    ,
     {
       category: 'Mining Drones',
       drones: [
         {
           id: '11',
-          title: 'MD-11 – Mining Survey & Inspection Drone',
-          image: '/assets/l11.png',
-          description: 'MD-11 is designed for mining site surveillance, terrain mapping, and underground inspection. Its compact build and advanced sensors make it ideal for harsh mining environments.',
+          title: 'XM-11 – Mining Survey & Inspection Drone',
+          image: '/assets/mine.webp',
+          description: 'XM-11 is designed for mining site operations including volume estimation, 3D terrain mapping, and tunnel assessment. Its compact structure and advanced sensors ensure reliable performance in challenging environments.',
           specs: [
-            { label: 'Payload', value:  '2.2 lb (1000 g) with EO camera + optional LiDAR' },
+            { label: 'Payload', value: '4.4 lb (2 kg) with LiDAR + optional EO camera' },
             { label: 'Endurance', value: '60 minutes' },
             { label: 'Operating temperature', value: '14°F to 122°F (−10°C to 50°C)' },
-            { label: 'Wind resistance', value: '26.8 mph (12 m/s)' },
-            { label: 'Max speed', value: '33.5 mph (15 m/s)' },
+            { label: 'Wind resistance', value: '33.5 mph (15 m/s)' },
+            { label: 'Max speed', value: '40.3 mph (18 m/s)' },
             { label: 'Range', value: '3.1 mi (5 km)' },
             { label: 'Waterproof Rating', value: 'IP53' },
-            { label: 'Use Case', value: 'Mining site surveillance, terrain scanning, underground inspection' }
+            {
+              label: 'Use Case',
+              value:
+                'Mining volume estimation, terrain mapping, tunnel mapping'
+            }
           ]
         }
       ]
     }
+    
     
   ];
   

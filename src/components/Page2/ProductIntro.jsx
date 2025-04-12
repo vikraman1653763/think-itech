@@ -36,6 +36,12 @@ const ProductIntro = () => {
       { name: 'AGR10', id: '8' },
       { name: 'AGR16', id: '9' },
     ],
+    Tethered: [
+      { name: 'XT-11', id: '10' },
+    ],
+    Mining: [
+      { name: 'XM-11', id: '11' },
+    ],
   };
 
   useEffect(() => {
